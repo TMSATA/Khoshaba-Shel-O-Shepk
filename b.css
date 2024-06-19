@@ -315,6 +315,14 @@ header::before{
  
 }
       }
+    @media (max-width: 393px) {
+        .s{
+            margin-top: 230px;
+            margin-left: 0;
+        
+        }
+    
+    }
       @media (max-width: 390px) {
         .s{
             margin-top: 180px;
