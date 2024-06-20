@@ -123,7 +123,7 @@ svg{
     header{
         margin-left: -80px;
     
-        margin-top: 650px;
+        margin-top: 800px;
         height: 400px;
      
     }
@@ -142,7 +142,7 @@ svg{
 
 }
 .s{
-    margin-top: 1000px;
+    margin-top: 1030px;
     margin-left: 20;
 
 }
@@ -155,7 +155,7 @@ svg{
             font-size: 21px;
         }
             .s{
-                margin-top: 170px;
+                margin-top: 200px;
                 margin-left: 0;
             
             }
@@ -185,7 +185,7 @@ svg{
  header{
     margin-left: -80px;
 
-    margin-top: 650px;
+    margin-top: 800px;
     height: 300px;
  
 }
@@ -217,7 +217,7 @@ header::before{
             background: #273036;
         }
 .s{
-    margin-top: 280px;
+    margin-top: 310px;
     margin-left: 0;
    position: absolute;
    top: 50%;
@@ -249,7 +249,7 @@ header::before{
  header{
     margin-left: -80px;
 
-    margin-top: 650px;
+    margin-top: 800px;
     width: 100%;
     height: 300px;
     background: url(la.jpg);
@@ -275,7 +275,7 @@ header::before{
             font-size: 21px;
         }
             .s{
-                margin-top: 170px;
+                margin-top: 200px;
                 margin-left: 0;
             
             }
@@ -305,7 +305,7 @@ header::before{
  header{
     margin-left: -80px;
 
-    margin-top: 650px;
+    margin-top: 800px;
     height: 300px;
  
 }
@@ -317,56 +317,70 @@ header::before{
       }
     @media (max-width: 393px) {
         .s{
-            margin-top: 280px;
+            margin-top: 310px;
             margin-left: 0;
         
+        }
+                header{
+            margin-top: 800px;
         }
     
     }
       @media (max-width: 390px) {
         .s{
-            margin-top: 180px;
+            margin-top: 310px;
             margin-left: 0;
         
+        }
+                  header{
+            margin-top: 800px;
         }
     
     }
     @media (max-width: 360px) {
+                .s{
+            margin-top: 310px;
+            margin-left: 0;
+        
+        }
         header{
-            margin-top: 700px;
+            margin-top: 800px;
         }
     
     
     }
       @media (max-width: 375px) {
         .s{
-            margin-top: 280px;
+            margin-top: 310px;
             margin-left: 0;
         
         }
         header{
-            margin-top: 700px;
+            margin-top: 800px;
         }
 
     
     }
     @media (max-width: 344px) {
         .s{
-            margin-top: 200px;
+            margin-top: 230px;
             margin-left: 0;
         
+        }
+                header{
+            margin-top: 800px;
         }
 
     
     }
     @media (max-width: 344px) {
         .s{
-            margin-top: 220px;
+            margin-top: 250px;
             margin-left: 0;
         
         }
         header{
-            margin-top: 750px;
+            margin-top: 800px;
         }
 
     
