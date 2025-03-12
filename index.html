@@ -1,40 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" integrity="sha512-v/wOVTkoU7mXEJC3hXnw9AA6v32qzpknvuUF6J2Lbkasxaxn2nYcl+HGB7fr/kChGfCqubVr1n2sq1UFu3Gh1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="b.css">
-    <title>Khoshaba Shel O Shepk
-</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>khoshaba sall u shapik</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      transition: background-image 3s ease-in-out; 
+    }
+
+   
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); 
+      z-index: -1;
+    }
+
+  
+    .content {
+      text-align: center;
+      z-index: 1;
+    }
+
+    h1 {
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      margin-bottom: 20px;
+    }
+
+    
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      width: 50%; 
+      max-width: 300px; 
+      margin: 0 auto;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #333;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+    }
+
+    .btn-tiktok {
+      background-color: #000;
+      color: white;
+    }
+
+    .btn-viber {
+      background-color: #7b519d;
+      color: white;
+    }
+
+    .btn-phone {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    .btn-gallery {
+      background-color: #FFC107;
+      color: white;
+    }
+
+    .gallery {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
-    <div class="wave-header">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#fff" fill-opacity="1" d="M0,64L48,106.7C96,149,192,235,288,266.7C384,299,480,277,576,234.7C672,192,768,128,864,112C960,96,1056,128,1152,128C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-          </svg>
-          <img class="mm" src="ol.jpg" alt="">
-        
-          <h1 class="h1">  خوشابه شەل و شەپك<br>
-            بۆ چێکرن و فروتنا<br> هەمی جۆرێن شەل و شەپکا
-          </h1>
+  <div class="content">
+    <h1>KHOSHABA SHAL U SHAPIK</h1>
+    <div class="buttons">
+      <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/+9647504711774')">WhatsApp</button>
+      <button class="btn btn-tiktok" onclick="window.open('https://www.tiktok.com/@albert.dnkha?_t=ZS-8tngQPY4kfC&_r=1')">TikTok</button>
+      <button class="btn btn-viber" onclick="window.open('viber://chat?number=+9647504711774')">Viber</button>
+     <button class="btn btn-phone" onclick="window.location.href='tel:+9647504711774'">phone call</button>
+     <a href="ALBUM.html"> <button class="btn btn-gallery">Image Gallery</button></a>
+     <p style="color: aliceblue;">this webiste is developed by <a href="https://www.instagram.com/enwatechx/profilecard/?igsh=aWowd3ltdWM5Y2F5" style="color: #7b519d;">ENWATECHX</a></p>
     </div>
+  </div>
 
-<div class="s">
-<a href="https://www.tiktok.com/@albert.dnkha"><i class="fa-brands fa-tiktok">      <span class="t">Tiktok</sapn></i></a>
-<a href="https://wa.me/9647504711774"><i class="fa-brands fa-whatsapp">    <span> WhatsApp</sapn></i></a>
-<a href= "viber://add?number=9647504711774"><i class="fa-brands fa-viber">   <span> Viber</sapn></i></a>
-<a href= "tel:+9647504711774"><i class="fa-solid fa-phone" style="font-size:22px;"><span> 0750 471 1774</sapn></i></a>
+  <script>
+    // Array of background images
+    const backgrounds = [
+      "IMG-20250218-WA0006.jpg",
+      "IMG-20250218-WA0015.jpg",
+      "IMG-20250218-WA0013.jpg",
+      "IMG-20250218-WA0007.jpg",
+    ];
 
-<a href="https://www.google.com/maps/place/Shel+O+Shepk+%7C+%D8%AE%D9%88%D8%B4%D8%A7%D8%A8%D9%87+%D8%B4%DB%95%D9%84+%D9%88+%D8%B4%DB%95%D9%BE%D9%83%E2%80%AD/@37.1413711,42.6820179,17z/data=!3m1!4b1!4m6!3m5!1s0x400919471ccfd6a7:0x42d28922548511a5!8m2!3d37.1413711!4d42.6820179!16s%2Fg%2F11l1d6hfv6?entry=ttu"><i class="fa-solid fa-location-dot"> <span> My Location</sapn></i></a>
+    let currentIndex = 0;
 
-</div>
-<header>
-    
-</header>
+    function changeBackground() {
+      document.body.style.backgroundImage = `url('${backgrounds[currentIndex]}')`;
+      currentIndex = (currentIndex + 1) % backgrounds.length;
+    }
+    setInterval(changeBackground, 3000); 
+
+    function toggleGallery() {
+      const gallery = document.getElementById('gallery');
+      if (gallery.style.display === 'none') {
+        gallery.style.display = 'grid';
+      } else {
+        gallery.style.display = 'none';
+      }
+    }
+  </script>
 </body>
 </html>
