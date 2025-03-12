@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .gallery-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .gallery-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      max-height: 80vh;
+      overflow-y: auto;
+      padding: 20px;
+      max-width: 100%;
+      width: 90%;
+    }
+    .gallery-item {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .close-modal:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1 class="gallery-title">Album Gallery</h1>
+    <H4>CLICK ON PICS TWO OPEN</H4>
+    <div class="gallery-container">
+      <div class="gallery-item" onclick="openModal('IMG-20250218-WA0006.jpg')">
+        <img src="IMG-20250218-WA0006.jpg" alt="Gallery Image 1">
+      </div>
+      <div class="gallery-item" onclick="openModal('IMG-20250218-WA0007.jpg')">
+        <img src="IMG-20250218-WA0007.jpg" alt="Gallery Image 2">
+      </div>
+      <div class="gallery-item" onclick="openModal('IMG-20250218-WA0008.jpg')">
+        <img src="IMG-20250218-WA0008.jpg" alt="Gallery Image 3">
+      </div>
+      <div class="gallery-item" onclick="openModal('IMG-20250218-WA0009.jpg')">
+        <img src="IMG-20250218-WA0009.jpg" alt="Gallery Image 4">
+      </div>
+      <div class="gallery-item" onclick="openModal('IMG-20250218-WA0011.jpg')">
+        <img src="IMG-20250218-WA0011.jpg" alt="Gallery Image 5">
+      </div>
+      <div class="gallery-item" onclick="openModal('IMG-20250218-WA0012.jpg')">
+        <img src="IMG-20250218-WA0012.jpg" alt="Gallery Image 6">
+      </div>
+      <div class="gallery-item" onclick="openModal('IMG-20250218-WA0013.jpg')">
+        <img src="IMG-20250218-WA0013.jpg" alt="Gallery Image 7">
+      </div>
+      <div class="gallery-item" onclick="openModal('IMG-20250218-WA0014.jpg')">
+        <img src="IMG-20250218-WA0014.jpg" alt="Gallery Image 8">
+      </div>
+      <div class="gallery-item" onclick="openModal('WhatsApp Image 2025-02-18 at 21.44.53_a2eb812e.jpg')">
+        <img src="WhatsApp Image 2025-02-18 at 21.44.53_a2eb812e.jpg" alt="Gallery Image 9">
+      </div>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <img id="modal-image" src="" alt="Enlarged Image">
+  </div>
+
+  <script>
+    function openModal(imageSrc) {
+      document.getElementById('modal-image').src = imageSrc;
+      document.getElementById('modal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('modal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    };
+  </script>
+</body>
+</html>
