@@ -18,9 +18,10 @@
       overflow: hidden;
       background-size: cover;
       background-position: center;
-      transition: background-image 1s ease-in-out;
+      transition: background-image 3s ease-in-out; 
     }
 
+   
     body::before {
       content: '';
       position: absolute;
@@ -32,6 +33,7 @@
       z-index: -1;
     }
 
+  
     .content {
       text-align: center;
       z-index: 1;
@@ -43,6 +45,7 @@
       margin-bottom: 20px;
     }
 
+    
     .buttons {
       display: flex;
       flex-direction: column;
@@ -114,19 +117,19 @@
 </head>
 <body>
   <div class="content">
-    <h1>خوشابه شەل و شەپک</h1>
+    <h1>KHOSHABA SHAL U SHAPIK</h1>
     <div class="buttons">
       <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/+9647504711774')">WhatsApp</button>
       <button class="btn btn-tiktok" onclick="window.open('https://www.tiktok.com/@albert.dnkha?_t=ZS-8tngQPY4kfC&_r=1')">TikTok</button>
       <button class="btn btn-viber" onclick="window.open('viber://chat?number=+9647504711774')">Viber</button>
      <button class="btn btn-phone" onclick="window.location.href='tel:+9647504711774'">phone call</button>
      <a href="ALBUM.html"> <button class="btn btn-gallery">Image Gallery</button></a>
-     <p style="color: aliceblue;">this webiste is developed by <a href="https://www.instagram.com/ashursodisho?igsh=MWsyZWN0ZDIzaGh0Mg%3D%3D&utm_source=qr" style="color: #7b519d;">Ashur S. Odisho</a></p>
+     <p style="color: aliceblue;">this webiste is developed by <a href="https://www.instagram.com/enwatechx/profilecard/?igsh=aWowd3ltdWM5Y2F5" style="color: #7b519d;">ENWATECHX</a></p>
     </div>
   </div>
 
   <script>
-
+    // Array of background images
     const backgrounds = [
       "IMG-20250218-WA0006.jpg",
       "IMG-20250218-WA0015.jpg",
@@ -137,14 +140,19 @@
     let currentIndex = 0;
 
     function changeBackground() {
-      document.body.style.transition = 'background-image 1s ease-in-out';
-      document.body.style.backgroundImage = url('${backgrounds[currentIndex]}');
+      document.body.style.backgroundImage = `url('${backgrounds[currentIndex]}')`;
       currentIndex = (currentIndex + 1) % backgrounds.length;
     }
-
     setInterval(changeBackground, 3000); 
 
-    changeBackground();
+    function toggleGallery() {
+      const gallery = document.getElementById('gallery');
+      if (gallery.style.display === 'none') {
+        gallery.style.display = 'grid';
+      } else {
+        gallery.style.display = 'none';
+      }
+    }
   </script>
 </body>
 </html>
